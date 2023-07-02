@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(90, 87, 87);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+h1 {
+    cursor: pointer;
+    color: white;
+}
+.ul {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.ul > li {
+    margin-left: 50px;
+    list-style-type: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+#logInBtn {
+    cursor: pointer;
+    padding: 2px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#modalWrapper {
+    display: none;
+    justify-content: center;
+    margin-top: 75px;
+}
+#modalBox {
+    background-color: rgb(204, 204, 204);
+    border: 2px solid black;
+    padding: 10px 20px 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#modalTitle {
+    display: inline-block;
+    margin: 0;
+    user-select: none;
+}
+#exitButton {
+    height: fit-content;
+    align-self: flex-end;
+    cursor: pointer;
+    user-select: none;
+    background-color: red;
+    border: 0.5px solid black;
+    border-radius: 2px;
+}
+#exitButton:hover {
+    opacity: 0.6;
+}
+#exitButton:active {
+    transform: scale(1.05);
+}
+#modalForm {
+    display: flex;
+    flex-direction: column;
+}
+#labelEmail, #labelPassword {
+    font-size: 18px;
+    user-select: none;
+    color: rgb(49, 49, 49);
+}
+#email, #password {
+    margin-bottom: 20px;
+    width: 400px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#submiteButton {
+    user-select: none;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.error {
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+}
+.succes {
+    font-weight: bold;
+    color: green;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 645px) {
+    .ul > li:not(:last-child){
+        display: none;
+    }
+}
+@media (max-width: 405px) {
+    #email, #password {
+        width: 250px;
+    }
+}
+@media (max-width: 335px) {
+    #email, #password {
+        width: 200px;
+    }
+}
+@media (max-width: 270px) {
+    #email, #password {
+        width: 150px;
+    }
+}

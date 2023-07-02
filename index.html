@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+
+        <meta name="description" content="FormJs" />
+        <meta name="keywords" content="Modal, js" />
+        <meta name="author" content="kikva" />
+
+        <meta property="og:title" content="JS Form/MODAL" />
+        <meta
+            property="og:image"
+            content="https://cdn.textstudio.com/output/sample/normal/8/6/9/4/counter-logo-275-14968.png"
+        />
+        <meta property="og:type" content="section" />
+        <meta
+            property="og:description"
+            content="TextCounter with Vanila JavaScript"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/app.js" defer></script>
+    </head>
+    <body>
+        <header class="main-wrapper">
+            <nav>
+                <h1>MODAL</h1>
+                <ul class="ul">
+                    <li>HOME</li>
+                    <li>NEWS</li>
+                    <li>CONTACT</li>
+                    <li><button id="logInBtn">Log in</button></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-wrapper" id="modalWrapper">
+            <div id="modalBox">
+                <button type="button" id="exitButton">X</button>
+                <h2 id="modalTitle">Log in</h2>
+                <form id="modalForm">
+                    <label for="email" id="labelEmail">Email</label>
+                    <input
+                        type="email"
+                        placeholder="Input email"
+                        title="Enter a email"
+                        required
+                        id="email"
+                    />
+                    <label for="password" id="labelPassword">Password</label>
+                    <input
+                        type="password"
+                        placeholder="Input password"
+                        title="Enter a password"
+                        required
+                        id="password"
+                    />
+                    <div id="errorBox">
+                        
+                    </div>
+                    <button  id="submiteButton">Log in</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
